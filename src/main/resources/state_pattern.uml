@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.when.design_pattern.state_pattern</OriginalElement>
+  <nodes>
+    <node x="252.0" y="732.0">com.when.design_pattern.state_pattern.HasQuarterState</node>
+    <node x="812.0" y="743.5">com.when.design_pattern.state_pattern.SoldOutState</node>
+    <node x="1085.0" y="743.5">com.when.design_pattern.state_pattern.NoQuarterState</node>
+    <node x="545.0" y="743.5">com.when.design_pattern.state_pattern.WinnerState</node>
+    <node x="577.5" y="560.0">com.when.design_pattern.state_pattern.State</node>
+    <node x="0.0" y="0.0">com.when.design_pattern.state_pattern.GumballMachine</node>
+    <node x="0.0" y="743.5">com.when.design_pattern.state_pattern.SoldState</node>
+    <node x="0.0" y="970.0">com.when.design_pattern.state_pattern.App</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.when.design_pattern.state_pattern.HasQuarterState" target="com.when.design_pattern.state_pattern.State">
+      <point x="0.0" y="-96.5" />
+      <point x="388.5" y="712.0" />
+      <point x="632.1" y="712.0" />
+      <point x="-36.39999999999998" y="61.0" />
+    </edge>
+    <edge source="com.when.design_pattern.state_pattern.NoQuarterState" target="com.when.design_pattern.state_pattern.State">
+      <point x="0.0" y="-85.0" />
+      <point x="1219.5" y="702.0" />
+      <point x="741.3" y="702.0" />
+      <point x="72.79999999999995" y="61.0" />
+    </edge>
+    <edge source="com.when.design_pattern.state_pattern.SoldOutState" target="com.when.design_pattern.state_pattern.State">
+      <point x="0.0" y="-85.0" />
+      <point x="938.5" y="712.0" />
+      <point x="704.9" y="712.0" />
+      <point x="36.39999999999998" y="61.0" />
+    </edge>
+    <edge source="com.when.design_pattern.state_pattern.SoldState" target="com.when.design_pattern.state_pattern.State">
+      <point x="0.0" y="-85.0" />
+      <point x="116.0" y="702.0" />
+      <point x="595.7" y="702.0" />
+      <point x="-72.79999999999995" y="61.0" />
+    </edge>
+    <edge source="com.when.design_pattern.state_pattern.WinnerState" target="com.when.design_pattern.state_pattern.State">
+      <point x="0.0" y="-85.0" />
+      <point x="0.0" y="61.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="677.0" y="523.0" />
+  <SelectedNodes>
+    <node>com.when.design_pattern.state_pattern.SoldState</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
