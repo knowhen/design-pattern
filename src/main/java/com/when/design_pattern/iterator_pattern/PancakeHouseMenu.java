@@ -1,8 +1,8 @@
 package com.when.design_pattern.iterator_pattern;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * @author: when

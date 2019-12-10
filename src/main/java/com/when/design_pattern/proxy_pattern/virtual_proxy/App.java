@@ -1,8 +1,11 @@
 package com.when.design_pattern.proxy_pattern.virtual_proxy;
 
-import java.net.*;
 import javax.swing.*;
-import java.util.*;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
 
 /**
  * @author: when

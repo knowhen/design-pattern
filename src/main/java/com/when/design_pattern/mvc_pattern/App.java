@@ -1,10 +1,7 @@
 package com.when.design_pattern.mvc_pattern;
 
-import com.when.design_pattern.mvc_pattern.controller.BeatController;
 import com.when.design_pattern.mvc_pattern.controller.ControllerInterface;
 import com.when.design_pattern.mvc_pattern.controller.HeartController;
-import com.when.design_pattern.mvc_pattern.model.BeatModel;
-import com.when.design_pattern.mvc_pattern.model.BeatModelInterface;
 import com.when.design_pattern.mvc_pattern.model.HeartModel;
 import com.when.design_pattern.mvc_pattern.model.HeartModelInterface;
 

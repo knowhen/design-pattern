@@ -1,8 +1,8 @@
 package com.when.design_pattern.command_pattern;
 
-import com.when.design_pattern.command_pattern.command.*;
-import com.when.design_pattern.command_pattern.device.CellingFan;
-import com.when.design_pattern.command_pattern.device.GarageDoor;
+import com.when.design_pattern.command_pattern.command.Command;
+import com.when.design_pattern.command_pattern.command.LightOffCommand;
+import com.when.design_pattern.command_pattern.command.LightOnCommand;
 import com.when.design_pattern.command_pattern.device.Light;
 import org.junit.Before;
 import org.junit.Test;
