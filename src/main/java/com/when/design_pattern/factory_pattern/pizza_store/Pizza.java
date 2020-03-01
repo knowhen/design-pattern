@@ -1,4 +1,4 @@
-package com.when.design_pattern.factory_pattern;
+package com.when.design_pattern.factory_pattern.pizza_store;
 
 import java.util.ArrayList;
 import java.util.List;
