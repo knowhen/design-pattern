@@ -1,4 +1,4 @@
-package com.when.design_pattern.singleton;
+package com.when.design_pattern.singleton.chocolate;
 
 /**
  * @author: when
