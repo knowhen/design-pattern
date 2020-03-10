@@ -30,7 +30,7 @@ public class LowerCaseInputStreamTest {
         while ((c = inputStream.read()) >= 0) {
             builder.append((char) c);
         }
-        assertEquals("i know the decorateor pattern therefor i rule!", builder.toString());
+        assertEquals("i know the decorator pattern therefor i rule!", builder.toString());
     }
 
     @After

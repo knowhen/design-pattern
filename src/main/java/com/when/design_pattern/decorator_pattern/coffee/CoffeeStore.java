@@ -1,4 +1,4 @@
-package com.when.design_pattern.decorator_pattern;
+package com.when.design_pattern.decorator_pattern.coffee;
 
 /**
  * @author: when
