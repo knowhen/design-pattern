@@ -1,4 +1,4 @@
-package com.when.design_pattern.composite_pattern;
+package com.when.design_pattern.composite_pattern.menu;
 
 import java.util.ArrayList;
 import java.util.Iterator;
