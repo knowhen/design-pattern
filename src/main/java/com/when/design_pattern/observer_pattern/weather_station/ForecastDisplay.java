@@ -1,4 +1,4 @@
-package com.when.design_pattern.observer_pattern;
+package com.when.design_pattern.observer_pattern.weather_station;
 
 import java.util.Observable;
 import java.util.Observer;
