@@ -11,4 +11,17 @@ public class RegPromotionObserver implements RegisterObserver {
     public void handleRegSuccess(long userId) {
         // promotionService.issueNewUserExperienceCash(userId);
     }
+
+    // 弊端：频繁地创建和销毁线程比较耗时，并且并发线程数无法控制，创建过多的线程会导致堆栈溢出
+    public void handleRegSuccessAsync(long userId) {
+        Thread thread = new Thread(() -> {
+            // promotionService.issueNewUserExperienceCash(userId);
+        });
+        thread.start();
+    }
+
+    //@Subscribe->EventBus annotation
+//    public void handleRegSuccess(long userId) {
+//        // promotionService.issueNewUserExperienceCash(userId);
+//    }
 }
