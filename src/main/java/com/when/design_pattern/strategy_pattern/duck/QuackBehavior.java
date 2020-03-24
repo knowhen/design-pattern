@@ -1,4 +1,4 @@
-package com.when.design_pattern.strategy_pattern;
+package com.when.design_pattern.strategy_pattern.duck;
 
 /**
  * @author: when
