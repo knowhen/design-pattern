@@ -12,17 +12,63 @@ public class Sorter {
     public void sortFile(String filePath) {
         File file = new File(filePath);
         long fileSize = file.length();
+        if (fileSize < 6 * GB) {
+            quickSort(filePath);
+        } else if (fileSize < 10 * GB) {
+            externalSort(filePath);
+        } else if (fileSize < 100 * GB) {
+            concurrentSort(filePath);
+        } else {
+            mapReduceSort(filePath);
+        }
+    }
+
+    public void sortFileV2(String filePath) {
+        File file = new File(filePath);
+        long fileSize = file.length();
         SortAlg alg = null;
         if (fileSize < 6 * GB) {
             alg = new QuickSort();
         } else if (fileSize < 10 * GB) {
             alg = new ExternalSort();
         } else if (fileSize < 100 * GB) {
-            new ConcurrentSort();
+            alg = new ConcurrentSort();
         } else {
-            new MapReduceSort();
+            alg = new MapReduceSort();
         }
         alg.sort(filePath);
+    }
+
+    public void sortFileV3(String filePath) {
+        File file = new File(filePath);
+        long fileSize = file.length();
+        SortAlg alg = null;
+        if (fileSize < 6 * GB) {
+            alg = SortAlgFactory.getSortAlg("QuickSort");
+        } else if (fileSize < 10 * GB) {
+            alg = SortAlgFactory.getSortAlg("ExternalSort");
+        } else if (fileSize < 100 * GB) {
+            alg = SortAlgFactory.getSortAlg("ConcurrentSort");
+        } else {
+            alg = SortAlgFactory.getSortAlg("mapReduceSort");
+        }
+        alg.sort(filePath);
+    }
+
+    private void quickSort(String filePath) {
+
+    }
+
+    private void externalSort(String filePath) {
+
+    }
+
+    private void concurrentSort(String filePath) {
+
+    }
+
+    private void mapReduceSort(String filePath) {
+
     }
 
 }
