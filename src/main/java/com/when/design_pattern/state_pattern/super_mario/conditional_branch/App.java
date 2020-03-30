@@ -1,4 +1,4 @@
-package com.when.design_pattern.state_pattern.super_mario;
+package com.when.design_pattern.state_pattern.super_mario.conditional_branch;
 
 /**
  * @author: when
