@@ -1,4 +1,4 @@
-package com.when.design_pattern.state_pattern;
+package com.when.design_pattern.state_pattern.gumball_machine;
 
 import java.util.Random;
 
