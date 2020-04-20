@@ -1,4 +1,4 @@
-package com.when.design_pattern.iterator_pattern;
+package com.when.design_pattern.iterator_pattern.waitress;
 
 import java.util.Iterator;
 import java.util.List;
