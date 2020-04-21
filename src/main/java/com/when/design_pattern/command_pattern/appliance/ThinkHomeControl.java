@@ -1,7 +1,7 @@
-package com.when.design_pattern.command_pattern;
+package com.when.design_pattern.command_pattern.appliance;
 
-import com.when.design_pattern.command_pattern.command.Command;
-import com.when.design_pattern.command_pattern.command.NoCommand;
+import com.when.design_pattern.command_pattern.appliance.command.Command;
+import com.when.design_pattern.command_pattern.appliance.command.NoCommand;
 
 /**
  * @author: when

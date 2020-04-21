@@ -1,6 +1,6 @@
-package com.when.design_pattern.command_pattern.command;
+package com.when.design_pattern.command_pattern.appliance.command;
 
-import com.when.design_pattern.command_pattern.device.GarageDoor;
+import com.when.design_pattern.command_pattern.appliance.device.GarageDoor;
 
 /**
  * @author: when

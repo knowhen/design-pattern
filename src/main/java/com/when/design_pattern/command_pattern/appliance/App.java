@@ -1,4 +1,4 @@
-package com.when.design_pattern.command_pattern;
+package com.when.design_pattern.command_pattern.appliance;
 
 /**
  * @author: when

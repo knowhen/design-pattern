@@ -1,9 +1,10 @@
 package com.when.design_pattern.command_pattern;
 
-import com.when.design_pattern.command_pattern.command.Command;
-import com.when.design_pattern.command_pattern.command.LightOffCommand;
-import com.when.design_pattern.command_pattern.command.LightOnCommand;
-import com.when.design_pattern.command_pattern.device.Light;
+import com.when.design_pattern.command_pattern.appliance.ThinkHomeControl;
+import com.when.design_pattern.command_pattern.appliance.command.Command;
+import com.when.design_pattern.command_pattern.appliance.command.LightOffCommand;
+import com.when.design_pattern.command_pattern.appliance.command.LightOnCommand;
+import com.when.design_pattern.command_pattern.appliance.device.Light;
 import org.junit.Before;
 import org.junit.Test;
 

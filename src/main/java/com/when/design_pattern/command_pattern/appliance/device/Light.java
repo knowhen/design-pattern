@@ -1,4 +1,4 @@
-package com.when.design_pattern.command_pattern.device;
+package com.when.design_pattern.command_pattern.appliance.device;
 
 /**
  * @author: when
