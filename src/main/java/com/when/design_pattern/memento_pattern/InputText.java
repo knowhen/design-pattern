@@ -15,8 +15,12 @@ public class InputText {
         builder.append(input);
     }
 
-    public void setText(String text) {
-        this.builder.replace(0, this.builder.length(), text);
+    public Snapshot createSnapshot() {
+        return new Snapshot(builder.toString());
+    }
+
+    public void restoreSnapshot(Snapshot snapshot) {
+        this.builder.replace(0, builder.length(), snapshot.getText());
     }
 
     @Override
