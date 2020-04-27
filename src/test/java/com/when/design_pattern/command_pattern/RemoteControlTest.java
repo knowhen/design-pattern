@@ -2,7 +2,6 @@ package com.when.design_pattern.command_pattern;
 
 import com.when.design_pattern.command_pattern.appliance.RemoteControl;
 import com.when.design_pattern.command_pattern.appliance.command.*;
-import com.when.design_pattern.command_pattern.command.*;
 import com.when.design_pattern.command_pattern.appliance.device.CellingFan;
 import com.when.design_pattern.command_pattern.appliance.device.GarageDoor;
 import com.when.design_pattern.command_pattern.appliance.device.Light;
