@@ -24,22 +24,22 @@ public class KeywordsCacheV2 {
 
     public void refreshV2() {
         // 拷贝已有对象数据
-        HashMap<String, Keyword> newKeywords = (HashMap<String, Keyword>) currentKeywords.clone();
+        HashMap<String, Keyword> copyOfCurrentKeywords = (HashMap<String, Keyword>) currentKeywords.clone();
 
         // 获取更新时间大于lastUpdateTime的数据
         List<Keyword> keywordsToUpdate = getKeywordsAfter(lastUpdateTime);
         long latestUpdateTime = lastUpdateTime;
-        for (Keyword keyword : keywordsToUpdate) {
-            if (keyword.getLastUpdateTime() > latestUpdateTime) {
-                latestUpdateTime = keyword.getLastUpdateTime();
+        for (Keyword keywordToUpdate : keywordsToUpdate) {
+            if (keywordToUpdate.getLastUpdateTime() > latestUpdateTime) {
+                latestUpdateTime = keywordToUpdate.getLastUpdateTime();
             }
-            if (newKeywords.containsKey(keyword.getKeyword())) {
-                Keyword oldKeyword = newKeywords.remove(keyword.getKeyword());
+            if (copyOfCurrentKeywords.containsKey(keywordToUpdate.getKeyword())) {
+                copyOfCurrentKeywords.remove(keywordToUpdate.getKeyword());
             }
-            newKeywords.put(keyword.getKeyword(), keyword);
+            copyOfCurrentKeywords.put(keywordToUpdate.getKeyword(), keywordToUpdate);
         }
         lastUpdateTime = latestUpdateTime;
-        currentKeywords = newKeywords;
+        currentKeywords = copyOfCurrentKeywords;
     }
 
     /**

@@ -1,7 +1,5 @@
 package com.when.design_pattern.prototype_pattern.keyword;
 
-import java.util.HashMap;
-import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -16,14 +14,14 @@ public class KeywordsCache {
     public void refresh() {
         List<Keyword> keywordsToUpdate = getKeywordsAfter(lastUpdateTime);
         long latestUpdateTime = lastUpdateTime;
-        for (Keyword keyword : keywordsToUpdate) {
-            if (keyword.getLastUpdateTime() > latestUpdateTime) {
-                latestUpdateTime = keyword.getLastUpdateTime();
+        for (Keyword keywordToUpdate : keywordsToUpdate) {
+            if (keywordToUpdate.getLastUpdateTime() > latestUpdateTime) {
+                latestUpdateTime = keywordToUpdate.getLastUpdateTime();
             }
-            if (currentKeywords.contains(keyword.getKeyword())) {
-                currentKeywords.replace(keyword.getKeyword(), keyword);
+            if (currentKeywords.contains(keywordToUpdate.getKeyword())) {
+                currentKeywords.replace(keywordToUpdate.getKeyword(), keywordToUpdate);
             } else {
-                currentKeywords.put(keyword.getKeyword(), keyword);
+                currentKeywords.put(keywordToUpdate.getKeyword(), keywordToUpdate);
             }
         }
         lastUpdateTime = latestUpdateTime;
